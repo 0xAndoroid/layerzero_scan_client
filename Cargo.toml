@@ -1,0 +1,18 @@
+[package]
+name = "layerzero_scan_client"
+version = "0.1.0"
+edition = "2021"
+author = "Andrew Tretyakov <andrii@tretyakov.xyz>"
+description = "Layerzero Scan Client"
+repository = "https://github.com"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+thiserror = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+
+[dev-dependencies]
+tokio = { version = "1.28.1", features = ["full"] }
