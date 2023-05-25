@@ -5,6 +5,7 @@ edition = "2021"
 author = "Andrew Tretyakov <andrii@tretyakov.xyz>"
 description = "Layerzero Scan Client"
 repository = "https://github.com"
+license = "MIT"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
