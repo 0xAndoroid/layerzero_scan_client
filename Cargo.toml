@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 author = "Andrew Tretyakov <andrii@tretyakov.xyz>"
 description = "Layerzero Scan Client"
-repository = "https://github.com"
+repository = "https://github.com/AndoroidX/layerzero_scan_client"
 license = "MIT"
 
 

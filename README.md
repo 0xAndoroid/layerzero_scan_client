@@ -8,7 +8,7 @@ Initialize client with the desired environment
 ```rust
 #[tokio::main]
 async fn main() {
-    let client = Client::new(Environment::Mainnet);
+    let client = Client::new(Environment::Mainnet, None);
     let src_tx_hash = "0x...";
     let response = client.get_message_by_src_tx_hash(src_tx_hash).await.unwrap();
 }
