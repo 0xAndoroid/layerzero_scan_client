@@ -1,6 +1,6 @@
 [package]
 name = "layerzero_scan_client"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 author = "Andrew Tretyakov <andrii@tretyakov.xyz>"
 description = "Layerzero Scan Client"

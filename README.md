@@ -1,7 +1,7 @@
 # LayerZero Scan Client
 ## Installation
 ```toml
-layerzero_scan_client = "0.1.0"
+layerzero_scan_client = "0.1"
 ```
 ## Usage
 Initialize client with the desired environment
