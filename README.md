@@ -14,8 +14,8 @@ async fn main() {
 }
 ```
 ## Response
-Response will include `Vec<Message>` with following parameters:
 For new transactions the message list may be empty. Polling should be implemented at the application level since it is app specific. Expect the messages list to be empty for recent transactions, before moving to status: INFLIGHT, and finally status: DELIVERED.
+Response will include `Vec<Message>` with following parameters:  
 ```rust
 pub struct Message {
     pub src_ua_address: String,
