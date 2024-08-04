@@ -2,7 +2,6 @@
 name = "layerzero_scan_client"
 version = "0.1.1"
 edition = "2021"
-author = "Andrew Tretyakov <andrii@tretyakov.xyz>"
 description = "Layerzero Scan Client"
 repository = "https://github.com/AndoroidX/layerzero_scan_client"
 license = "MIT"
@@ -12,7 +11,7 @@ license = "MIT"
 
 [dependencies]
 thiserror = "1.0"
-reqwest = { version = "0.11", features = ["json"] }
+reqwest = { version = "0.12", features = ["json"] }
 serde = { version = "1.0", features = ["derive"] }
 
 [dev-dependencies]

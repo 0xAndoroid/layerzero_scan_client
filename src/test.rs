@@ -1,4 +1,4 @@
-use crate::{GetMessageBySrcTxHashResponse};
+use crate::GetMessageBySrcTxHashResponse;
 
 #[tokio::test]
 pub async fn query_sample_lz_tx() {
@@ -7,7 +7,7 @@ pub async fn query_sample_lz_tx() {
     let response = crate::get_message_by_src_tx_hash(src_chain_id, src_tx_hash)
         .await
         .unwrap();
-    assert_eq!(response.messages.get(0).unwrap().src_tx_hash, src_tx_hash);
+    assert_eq!(response.messages.first().unwrap().src_tx_hash, src_tx_hash);
 }
 
 #[tokio::test]

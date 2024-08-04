@@ -1,9 +1,9 @@
 #[cfg(test)]
 mod test;
 
-pub async fn get_message_by_src_tx_hash<'a>(
+pub async fn get_message_by_src_tx_hash(
     src_chain_id: u64,
-    src_tx_hash: &'a str,
+    src_tx_hash: &str,
 ) -> Result<GetMessageBySrcTxHashResponse, Error> {
     let env = if src_chain_id < 10000 {
         Environment::Mainnet
@@ -26,7 +26,7 @@ pub struct Client {
 impl Client {
     pub fn new(env: Environment, options: Option<ClientOptions>) -> Self {
         Client {
-            options: options.unwrap_or(ClientOptions::default()),
+            options: options.unwrap_or_default(),
             env,
         }
     }
@@ -87,13 +87,8 @@ pub struct GetMessageBySrcTxHashResponse {
     pub messages: Vec<Message>,
 }
 
+#[derive(Default)]
 pub struct ClientOptions {}
-
-impl Default for ClientOptions {
-    fn default() -> Self {
-        ClientOptions {}
-    }
-}
 
 pub enum Environment {
     Testnet,
