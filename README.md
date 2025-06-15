@@ -1,4 +1,7 @@
 # LayerZero Scan Client
+
+> The project has been unmaintained for several years now, and I think API has changed since then.
+
 ## Installation
 ```toml
 layerzero_scan_client = "0.1"
